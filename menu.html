@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Kemmy Pizza Inn</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #ff4500;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #e03d00;
+            border-radius: 5px;
+        }
+
+        /* Menu Section */
+        .menu {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .menu h1 {
+            color: #ff4500;
+            margin-bottom: 20px;
+        }
+
+        .menu p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Menu Grid */
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .menu-card {
+            background-color: white;
+            width: 280px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .menu-card h3 {
+            color: #333;
+            margin: 10px 0 5px 0;
+        }
+
+        .menu-card p {
+            color: #666;
+            font-size: 16px;
+            margin: 5px 0 10px 0;
+        }
+
+        .menu-card .price {
+            color: #ff4500;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff4500;
+            color: white;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="offers.html">Offers</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Menu Section -->
+    <div class="menu">
+        <h1>Our Menu 🍕</h1>
+        <p>Freshly baked pizzas, delicious sides, and cool drinks — made just for you!</p>
+
+        <div class="menu-items">
+
+            <div class="menu-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy-tSPPEH9cU6BDeb8QnQieBxc2jMYAU5vqA&s"
+                    alt="Pepperoni Pizza">
+                <h3>Pepperoni Pizza</h3>
+                <p>Loaded with cheese and spicy pepperoni.</p>
+                <p class="price">KSh 950</p>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWJYisqJMvRPHMiYVpieU6Z-0E0wqck81p4A&s"
+                    alt="BBQ Chicken Pizza">
+                <h3>BBQ Chicken Pizza</h3>
+                <p>Grilled chicken, onions, BBQ sauce, and mozzarella.</p>
+                <p class="price">KSh 1,050</p>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZaZCwDeGuboksk62s3OPylr2C9T0bqd-igw&s"
+                    alt="Veggie Delight">
+                <h3>Veggie Delight</h3>
+                <p>Tomatoes, bell peppers, olives & sweet corn.</p>
+                <p class="price">KSh 900</p>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.deliveryhero.io/image/fd-pk/LH/c3vc-listing.jpg" alt="Cheese Lovers">
+                <h3>Cheese Lovers</h3>
+                <p>Extra cheesy goodness with a creamy base.</p>
+                <p class="price">KSh 850</p>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQonzen0nKs_IgV48fUVabr_g2ySUNE8Zz4A&s"
+                    alt="Hawaiian Pizza">
+                <h3>Hawaiian Pizza</h3>
+                <p>Juicy pineapple, ham, and mozzarella cheese.</p>
+                <p class="price">KSh 1,000</p>
+            </div>
+
+            <div class="menu-card">
+                <img src="data:image/jpeg;base64,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"
+                    alt="Fries and Soda">
+                <h3>Fries & Soda Combo</h3>
+                <p>Perfect combo for a quick snack.</p>
+                <p class="price">KSh 450</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Kemmy Pizza Inn. All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>
